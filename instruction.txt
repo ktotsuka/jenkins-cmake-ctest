@@ -1,0 +1,17 @@
+From this directory:
+
+$ mkdir build
+$ cd build
+$ cmake ..
+  - You need to point to where CMakeLists.txt is
+  - Creates bunch of files in this directory
+$ make
+  - It generates the executables in this directory
+$ ./my_ctest
+  - Run the generated main executable
+$ ctest
+  - Run the unit test
+    - The test should pass
+ 
+
+ 
