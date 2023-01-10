@@ -13,8 +13,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing'
+                echo 'Testing main executable'
                 sh './hello'
+                echo 'Unit test'
+                ctest 'InSearchPath'
             }
         }
         stage('Deploy') {
