@@ -8,6 +8,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -la'
                 cmakeBuild buildType: 'Release', cleanBuild: true, installation: 'InSearchPath'
+                sh 'make'
             }
         }
         stage('Test') {
